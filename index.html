@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Gaming Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <h1>NFT Gaming Store</h1>
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Cari..." class="search-input">
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="image/pubg_mobile_id-b3a0-original-dd4e-original.webp" alt="Produk 1">
+            <h2>PUBG MOBILE</h2>
+            <p>Proses Otomatis</p>
+            <button class="buy-button"><a href="https://wa.me/6281288330203?text=Halo%2C%20saya%20ingin%20membeli%20top-up%20game">
+                Beli Sekarang</a></button>
+            <button class="buy-button"><a href="detailpubg.html">Detail</a></button>
+        </div>
+        <div class="product">
+            <img src="image/mobilelegends-2998-original-b5dc-original.webp" alt="Produk 2">
+            <h2>MOBILE LEGENDS</h2>
+            <p>Proses Otomatis</p>
+            <button class="buy-button"><a href="https://wa.me/6281288330203?text=Halo%2C%20saya%20ingin%20membeli%20top-up%20game">
+                Beli Sekarang</a></button>
+            <button class="buy-button"><a href="detailml.html">Detail</a></button>
+        </div>
+        <div class="product">
+            <img src="image/free_fire-d967-original.webp" alt="Produk 3">
+            <h2>FREE FIRE</h2>
+            <p>Proses Otomatis</p>
+            <button class="buy-button"><a href="https://wa.me/6281288330203?text=Halo%2C%20saya%20ingin%20membeli%20top-up%20game">
+                Beli Sekarang</a></button>
+            <button class="buy-button"><a href="detailff.html">Detail</a></button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="ulasan.html">Ulasan</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2023 NFT Gaming Store. Hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.querySelector('.search-input');
+            const products = document.querySelectorAll('.product');
+
+            searchInput.addEventListener('keyup', function (event) {
+                const searchText = event.target.value.toLowerCase();
+
+                products.forEach(product => {
+                    const productName = product.querySelector('h2').innerText.toLowerCase();
+
+                    if (productName.includes(searchText)) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

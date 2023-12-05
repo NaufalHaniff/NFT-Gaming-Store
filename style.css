@@ -1,0 +1,186 @@
+/* Aturan responsif untuk layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    /* Style untuk search input pada layar kecil */
+    .search-input {
+        width: 100%; /* Mengisi lebar penuh */
+        margin: 10px; /* Membuat jarak antara elemen */
+    }
+
+    /* Style untuk product container pada layar kecil */
+    .product-container {
+        flex-direction: column; /* Menampilkan produk dalam kolom tunggal */
+        align-items: center; /* Pusatkan produk di tengah */
+    }
+
+    /* Style untuk produk pada layar kecil */
+    .product {
+        width: 90%; /* Menyesuaikan lebar produk */
+        margin: 10px 0; /* Membuat jarak antara produk */
+    }
+
+    /* Style untuk "Beli Sekarang" button pada layar kecil */
+    .buy-button {
+        margin-top: 10px; /* Membuat jarak atas tombol */
+    }
+
+    /* Style untuk navigasi navbar pada layar kecil */
+    .navbar ul {
+        flex-direction: column; /* Menampilkan item navigasi dalam kolom */
+        padding: 0; /* Menghilangkan padding */
+    }
+
+    /* Style untuk link pada navbar layar kecil */
+    .navbar a {
+        padding: 10px 0; /* Padding untuk setiap tautan */
+    }
+}
+
+/* Style untuk header */
+header {
+    text-align: center; /* Menengahkan teks */
+    padding: 20px; /* Ruang di sekitar header */
+    background-color: #333; /* Warna latar belakang header */
+    color: #fff; /* Warna teks */
+}
+
+/* Style untuk teks "Top Up Amanah" */
+header h1 {
+    margin-bottom: 10px; /* Ruang di bawah teks */
+    font-size: 24px; /* Ukuran teks */
+}
+
+
+.body {
+    position: relative;
+    min-height: 100%;
+}
+
+.logo {
+    color: #333;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 5px; /* Tambahkan margin bawah */
+}
+
+.logo h1 {
+    margin: 0; /* Hilangkan margin atas dan bawah */
+}
+
+/* Style the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+/* Style the search input */
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Style the product container */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1500px; /* Optional: Menentukan lebar maksimum */
+    margin: 0 auto; /* Optional: Pusatkan produk di tengah halaman */
+}
+
+/* Style the product container */
+.product {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the product image */
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the product title */
+.product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Style the product description */
+.product p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Style the "Beli Sekarang" button */
+.buy-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buy-button a {
+    color: white; /* warna teks tautan */
+}
+
+/* Hover effect for the "Beli Sekarang" button */
+.buy-button:hover {
+    background-color: #555;
+}
+
+/* Reset default margin and padding for the <ul> element */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #333; /* Warna latar belakang navbar */
+    position: fixed; /* Tetapkan posisi navbar di bawah */
+    bottom: 0; /* Letakkan navbar di bagian bawah halaman */
+    left: 0; /* Letakkan navbar di sisi kiri halaman */
+    width: 100%; /* Lebar navbar 100% dari lebar layar */
+}
+
+/* Style the list items in the navbar */
+.navbar ul {
+    display: flex; /* Tampilkan item-item dalam baris horizontal */
+    justify-content: space-around; /* Membuat item-item tersebar secara merata */
+    padding: 10px 0; /* Padding atas dan bawah untuk item */
+}
+
+/* Style the links in the navbar */
+.navbar a {
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+    color: #fff; /* Warna teks tautan */
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat tautan dihover */
+}
+
+/* Style Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
